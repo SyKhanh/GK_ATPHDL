@@ -9,11 +9,10 @@ Quy tắc:
   * Có thể tách mã ra nhiều tệp (vd. ntfs.py, runlist.py) và import vào đây.
 """
 
-
+from exfat import ExFAT
 class BaiLam:
     def __init__(self, log):
         self.log = log
-
     # ------------------------------------------------------------------ --info
     def info(self, img):
         """Đọc ảnh NGUYÊN VẸN, trả về dict:
@@ -21,9 +20,8 @@ class BaiLam:
              "cluster_size": 4096,                # kích thước cluster/block (byte)
              ...                                  # các tham số khác tuỳ hệ thống (không chấm)
              "files": [{"path": "DATA/A12.JPG", "size": 123456}, ...]}   # chỉ tập tin, không thư mục
-        """
-        raise NotImplementedError("info")
-
+        """ 
+        return ExFAT(img, self.log).info()
     # ------------------------------------------------------------- tình huống
     def case1(self, img, out):
         """Tình huống 1 — sai tham số boot sector / superblock.
