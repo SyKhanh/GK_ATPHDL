@@ -1,0 +1,142 @@
+{
+ "fs": "exfat",
+ "case": "1",
+ "seed": "cong-khai:MAU:exfat:1",
+ "image_offset": 0,
+ "params": {
+  "fs": "exfat",
+  "bytes_per_sector": 512,
+  "sectors_per_cluster": 8,
+  "cluster_size": 4096,
+  "fat_offset": 1048576,
+  "cluster_heap_offset": 2097152,
+  "cluster_count": 130560,
+  "root_cluster": 8
+ },
+ "files": [
+  {
+   "path": "DATA/T17.JPG",
+   "size": 125703,
+   "sha256": "888fff57b8d1ffee8c0c12223bd3b6fd50f3b1c41b57383e117629e0e556c384",
+   "runs": [
+    [
+     10,
+     31
+    ]
+   ],
+   "mtime": "2026-09-07T04:05:36"
+  },
+  {
+   "path": "DATA/P77.JPG",
+   "size": 415217,
+   "sha256": "6a1044a7811001a29fe994a05bb2b4d1aec93b0c4d718f45c5ef2b2deaf024fc",
+   "runs": [
+    [
+     120,
+     102
+    ]
+   ],
+   "mtime": "2026-09-07T04:22:40"
+  },
+  {
+   "path": "DATA/A83.PNG",
+   "size": 127632,
+   "sha256": "b94fe046a9a420ba034147c851a081a7ae19727bb86ab04dbb283cbc3ed16dba",
+   "runs": [
+    [
+     41,
+     32
+    ]
+   ],
+   "mtime": "2026-09-07T04:39:06"
+  },
+  {
+   "path": "DATA/Z81.PDF",
+   "size": 185992,
+   "sha256": "5c8149afaf0a1f26ad8e53cc5ffffb2884f7e434cc5ff04e398cc4950c582298",
+   "runs": [
+    [
+     73,
+     46
+    ]
+   ],
+   "mtime": "2026-09-07T04:56:28"
+  },
+  {
+   "path": "DATA/F25.TXT",
+   "size": 137,
+   "sha256": "4beb8c65de09a8a9830c606a212994a4ca0aa5642e719665c565b0cc46d16079",
+   "runs": [
+    [
+     119,
+     1
+    ]
+   ],
+   "mtime": "2026-09-07T05:13:38"
+  }
+ ],
+ "unit_size": 4096,
+ "unit_base": 2088960,
+ "targets": [
+  "DATA/T17.JPG",
+  "DATA/P77.JPG",
+  "DATA/A83.PNG",
+  "DATA/Z81.PDF",
+  "DATA/F25.TXT"
+ ],
+ "dap_an": {
+  "case": 1,
+  "fields": [
+   {
+    "field": "FatOffset",
+    "offset": 80,
+    "size": 4,
+    "correct": 2048,
+    "written": 2016
+   },
+   {
+    "field": "FatOffset",
+    "offset": 6224,
+    "size": 4,
+    "correct": 2048,
+    "written": 2016
+   },
+   {
+    "field": "ClusterHeapOffset",
+    "offset": 88,
+    "size": 4,
+    "correct": 4096,
+    "written": 3968
+   },
+   {
+    "field": "ClusterHeapOffset",
+    "offset": 6232,
+    "size": 4,
+    "correct": 4096,
+    "written": 3968
+   },
+   {
+    "field": "SectorsPerClusterShift",
+    "offset": 109,
+    "size": 1,
+    "correct": 3,
+    "written": 5
+   },
+   {
+    "field": "SectorsPerClusterShift",
+    "offset": 6253,
+    "size": 1,
+    "correct": 3,
+    "written": 5
+   }
+  ],
+  "note": "Boot Checksum (sector 11, 23) đã được tính lại cho khớp giá trị sai.",
+  "targets": [
+   "DATA/T17.JPG",
+   "DATA/P77.JPG",
+   "DATA/A83.PNG",
+   "DATA/Z81.PDF",
+   "DATA/F25.TXT"
+  ]
+ }
+}

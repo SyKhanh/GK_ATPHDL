@@ -1,0 +1,116 @@
+{
+ "fs": "exfat",
+ "case": "2",
+ "seed": "cong-khai:MAU:exfat:2",
+ "image_offset": 0,
+ "params": {
+  "fs": "exfat",
+  "bytes_per_sector": 512,
+  "sectors_per_cluster": 8,
+  "cluster_size": 4096,
+  "fat_offset": 1048576,
+  "cluster_heap_offset": 2097152,
+  "cluster_count": 130560,
+  "root_cluster": 8
+ },
+ "files": [
+  {
+   "path": "DATA/X47.JPG",
+   "size": 72367,
+   "sha256": "8f3c4146c136130f0018552e5e3de831a86636861207982a90556d1970da8d8d",
+   "runs": [
+    [
+     10,
+     18
+    ]
+   ],
+   "mtime": "2026-09-22T09:37:36"
+  },
+  {
+   "path": "DATA/N86.JPG",
+   "size": 480032,
+   "sha256": "7cff6aeee21e5dcbc8f872f210df0448dd1e9229dba7af0526c23ce4db55034c",
+   "runs": [
+    [
+     130,
+     118
+    ]
+   ],
+   "mtime": "2026-09-22T09:54:54"
+  },
+  {
+   "path": "DATA/Z95.PNG",
+   "size": 206388,
+   "sha256": "0c8adf8268bbfeea6aeacea5775e944d2e857affd8a8c3af5377215af7bdc1dd",
+   "runs": [
+    [
+     28,
+     51
+    ]
+   ],
+   "mtime": "2026-09-22T10:11:38"
+  },
+  {
+   "path": "DATA/B69.PDF",
+   "size": 202479,
+   "sha256": "5d5fce8f7fcd6899fe5bea48ea0304af622976aa7b6edc8bbd881bd94df0a074",
+   "runs": [
+    [
+     79,
+     50
+    ]
+   ],
+   "mtime": "2026-09-22T10:28:04"
+  },
+  {
+   "path": "DATA/Q20.TXT",
+   "size": 268,
+   "sha256": "f305494190ea3653be4e4d6fe9b75abaeae2a3abf0003f5e7da80d492745dbf5",
+   "runs": [
+    [
+     129,
+     1
+    ]
+   ],
+   "mtime": "2026-09-22T10:45:36"
+  }
+ ],
+ "unit_size": 4096,
+ "unit_base": 2088960,
+ "targets": [
+  "DATA/Q20.TXT",
+  "DATA/X47.JPG",
+  "DATA/B69.PDF"
+ ],
+ "dap_an": {
+  "case": 2,
+  "targets": [
+   "DATA/Q20.TXT",
+   "DATA/X47.JPG",
+   "DATA/B69.PDF"
+  ],
+  "fields": [
+   {
+    "path": "DATA/Q20.TXT",
+    "field": "FirstCluster",
+    "offset": 2126164,
+    "correct": 129,
+    "written": 0
+   },
+   {
+    "path": "DATA/X47.JPG",
+    "field": "FirstCluster",
+    "offset": 2125876,
+    "correct": 10,
+    "written": 0
+   },
+   {
+    "path": "DATA/B69.PDF",
+    "field": "FirstCluster",
+    "offset": 2126068,
+    "correct": 79,
+    "written": 0
+   }
+  ]
+ }
+}

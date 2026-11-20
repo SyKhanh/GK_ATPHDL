@@ -1,0 +1,105 @@
+{
+ "fs": "exfat",
+ "case": "3",
+ "seed": "cong-khai:MAU:exfat:3",
+ "image_offset": 0,
+ "params": {
+  "fs": "exfat",
+  "bytes_per_sector": 512,
+  "sectors_per_cluster": 8,
+  "cluster_size": 4096,
+  "fat_offset": 1048576,
+  "cluster_heap_offset": 2097152,
+  "cluster_count": 130560,
+  "root_cluster": 8
+ },
+ "files": [
+  {
+   "path": "DATA/Y72.JPG",
+   "size": 223000,
+   "sha256": "64f9e0cec2d99b0970cd0b49edd8a1cf246ac1bb048defc83f83a383dff8f9f5",
+   "runs": [
+    [
+     10,
+     55
+    ]
+   ],
+   "mtime": "2026-10-09T19:26:38"
+  },
+  {
+   "path": "DATA/F84.JPG",
+   "size": 329905,
+   "sha256": "755e1a26fe02d91c04e73da42767d3cc3d2cdb45326839405708505383023df8",
+   "runs": [
+    [
+     138,
+     81
+    ]
+   ],
+   "mtime": "2026-10-09T19:43:50"
+  },
+  {
+   "path": "DATA/H77.PNG",
+   "size": 166088,
+   "sha256": "038356c2726c1e909a27c5b5014bb46e1cbb0d87e5f7d0c1f0cb7c225b3c0690",
+   "runs": [
+    [
+     65,
+     41
+    ]
+   ],
+   "mtime": "2026-10-09T20:00:34"
+  },
+  {
+   "path": "DATA/I13.PDF",
+   "size": 125249,
+   "sha256": "8af899b375ac0a72af50bc15f41e1c8ba6e149809a6b88cd28885c9fbe2b1f8a",
+   "runs": [
+    [
+     106,
+     31
+    ]
+   ],
+   "mtime": "2026-10-09T20:17:36"
+  },
+  {
+   "path": "DATA/W96.TXT",
+   "size": 223,
+   "sha256": "ddd46ae34cb810196229fc36f1a8025a6f64e31de22b5beb959f57a6c4f2a1b0",
+   "runs": [
+    [
+     137,
+     1
+    ]
+   ],
+   "mtime": "2026-10-09T20:34:08"
+  }
+ ],
+ "unit_size": 4096,
+ "unit_base": 2088960,
+ "targets": [
+  "DATA/F84.JPG"
+ ],
+ "dap_an": {
+  "case": 3,
+  "targets": [
+   "DATA/F84.JPG"
+  ],
+  "fragments": [
+   [
+    138,
+    44
+   ],
+   [
+    222,
+    37
+   ]
+  ],
+  "unit_size": 4096,
+  "gap_units": 40,
+  "junk_units": [
+   182,
+   40
+  ]
+ }
+}
