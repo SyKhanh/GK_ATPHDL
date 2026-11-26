@@ -11,6 +11,7 @@ Quy tắc:
 
 from exfat import ExFAT
 from case2 import thuc_hien_case2, sua_case2
+from case1 import Case1
 class BaiLam:
     def __init__(self, log):
         self.log = log
@@ -27,7 +28,7 @@ class BaiLam:
     def case1(self, img, out):
         """Tình huống 1 — sai tham số boot sector / superblock.
         Suy ra giá trị đúng, rồi trích xuất MỌI tập tin: out.luu("DATA/A12.JPG", data)."""
-        raise NotImplementedError("case1")
+        Case1(img, self.log).chay(out)
 
     def case2(self, img, out):
         """Tình huống 2 — sai directory entry. Ghép đúng tên với dữ liệu, lưu các tập tin bị ảnh hưởng
