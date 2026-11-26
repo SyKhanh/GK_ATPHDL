@@ -10,6 +10,7 @@ Quy tắc:
 """
 
 from exfat import ExFAT
+from case2 import thuc_hien_case2, sua_case2
 class BaiLam:
     def __init__(self, log):
         self.log = log
@@ -31,7 +32,7 @@ class BaiLam:
     def case2(self, img, out):
         """Tình huống 2 — sai directory entry. Ghép đúng tên với dữ liệu, lưu các tập tin bị ảnh hưởng
         (lưu thêm cả tập tin không bị ảnh hưởng cũng được)."""
-        raise NotImplementedError("case2")
+        thuc_hien_case2(img, out, self.log)
 
     def case3(self, img, out):
         """Tình huống 3 — sai chuỗi vị trí. Ghép mảnh theo nội dung, lưu tập tin JPEG mục tiêu."""
@@ -48,7 +49,10 @@ class BaiLam:
             ban_sua.ghi_u16(..., ...)
             ban_sua.dong()
         """
-        raise NotImplementedError("repair")
+        if str(case) == "2":
+            sua_case2(img, anh_moi, self.log)
+            return
+        raise NotImplementedError(f"repair case {case}")
 
     def corrupt(self, img, dac_ta, anh_hong):
         """--corrupt: từ ảnh sạch, tạo ảnh hỏng theo đặc tả JSON của nhóm.
