@@ -11,6 +11,7 @@ Quy tắc:
 
 from exfat import ExFAT
 from case2 import thuc_hien_case2, sua_case2
+from case3 import thuc_hien_case3
 from case1 import Case1
 class BaiLam:
     def __init__(self, log):
@@ -37,7 +38,7 @@ class BaiLam:
 
     def case3(self, img, out):
         """Tình huống 3 — sai chuỗi vị trí. Ghép mảnh theo nội dung, lưu tập tin JPEG mục tiêu."""
-        raise NotImplementedError("case3")
+        thuc_hien_case3(img, out, self.log)
 
     def case_ext(self, img, out):
         """Tình huống mở rộng nhóm đã chọn (khai trong nhom.json)."""
